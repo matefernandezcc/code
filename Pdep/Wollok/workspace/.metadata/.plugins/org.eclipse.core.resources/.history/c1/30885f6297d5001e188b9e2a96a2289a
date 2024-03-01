@@ -1,0 +1,37 @@
+object pepita {
+	var energia = 100
+	
+	method vola(kilometros){
+		energia = energia - kilometros*2
+	}
+	
+	method come(gramos){
+		energia = energia + gramos*10
+	}
+	
+	method energia() = energia
+	
+}
+
+object emilia {
+	method entrena(ave){
+		ave.come(5)
+		ave.vola(10)
+		ave.come(5)
+	}
+}
+
+object pepote {
+	var volado = 0
+	var comido = 0
+	
+	method vola(kilometros){
+		volado = volado + kilometros
+	}
+	
+	method come(gramos){
+		comido = comido + gramos
+	}
+	
+	method energia() = 255 + comido**2 - volado/5
+}

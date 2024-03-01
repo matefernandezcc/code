@@ -1,0 +1,5 @@
+object julieta {
+	var tickets = 15
+	
+	method tickets() = tickets
+}
