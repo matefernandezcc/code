@@ -1,3 +1,6 @@
 {
-
+    "haskell.": true,
+    "haskell.hlint.suggestions": {
+        "ignore": ["Use camelCase", "Use String", "Use head", "Use missing signatures"]
+    }
 }

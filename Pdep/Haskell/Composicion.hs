@@ -1,5 +1,3 @@
-import Text.Show.Functions
-
 a = (*2)
 b = (+3)
 
