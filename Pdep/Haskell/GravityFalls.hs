@@ -1,5 +1,5 @@
 {- HLINT ignore "Redundant bracket" -}
-{- HLINT ignore "Use const" -}
+{- HLINT ignore "Use const" -} 
 import Text.Show.Functions
 -- ================================= Gravity Falls =================================
 
