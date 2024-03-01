@@ -3,18 +3,26 @@
 -- ================================= 1er Parte =================================
 data Criatura = Criatura {
     peligrosidad:: Int,
-    puedeDeshacerser:: Persona -> Bool
+    puedeDeshacerse:: Persona -> Bool
 } deriving Show
 
 siempreDetras = Criatura {
     peligrosidad = 0,
-    puedeDeshacerser = (\_ -> False)
+    puedeDeshacerse = (\_ -> False)
 }
 
-gnomos = Criatura {
+gnomos cantidad = Criatura {
     peligrosidad = 2^cantidad,
-    puedeDeshacerser = (\_ -> False)
+    puedeDeshacerse = (\_ -> False)
 }
+diezGnomos = gnomos 10
+
+
+fantasma = Criatura {
+    peligrosidad = podes * 20,
+    puedeDeshacerse = (\_ -> False)
+}
+fantasmas = map fantasma [1..10]
 
 
 type Persona = String
