@@ -1,3 +1,4 @@
+
 data Mago = Mago{
     nombre :: String,
     edad :: Int,

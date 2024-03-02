@@ -92,8 +92,8 @@ mejorOponente mago (Academia magos _) = f (\m1 m2 -> diferenciaDePoder mago m1 >
 
 
 -- ================================= Punto 5 ================================= Error por el tipo data en vez de type hechizo
-noPuedeGanarle :: Mago -> Mago -> Bool
-noPuedeGanarle mago1 mago2 = salud mago1 == leTiraTodosLosHechizos mago1 mago2
+-- noPuedeGanarle :: Mago -> Mago -> Bool
+-- noPuedeGanarle mago1 mago2 = salud mago1 == leTiraTodosLosHechizos mago1 mago2
 
-leTiraTodosLosHechizos:: Mago -> Mago -> Int
-leTiraTodosLosHechizos magoPrimero magoSegundo = salud (foldl (\acc x -> x acc) magoPrimero (hechizos magoSegundo))
+-- leTiraTodosLosHechizos:: Mago -> Mago -> Int
+-- leTiraTodosLosHechizos magoPrimero magoSegundo = salud (foldl (\acc x -> x acc) magoPrimero (hechizos magoSegundo))
