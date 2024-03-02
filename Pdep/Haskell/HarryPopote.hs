@@ -13,6 +13,20 @@ data Mago = Mago {
     hechizos :: [Hechizo]
 }
 
+harry = Mago {
+    nombre = "Harry Potter",
+    edad = 19,
+    salud = 10,
+    hechizos = [Confundus, SectumSempra]
+}
+
+hermione = Mago {
+    nombre = "Hermione",
+    edad = 17,
+    salud = 6,
+    hechizos = [Confundus, SectumSempra, Obliviate 1]
+}
+
 data Hechizo = LagrimaFenix { cantidad :: Int }
              | SectumSempra
              | Obliviate { cantidadOlvidar :: Int }
@@ -21,11 +35,13 @@ data Hechizo = LagrimaFenix { cantidad :: Int }
 
 -- ================================= Punto 2 =================================
 poder :: Mago -> Int
-poder (Mago _ age hp spells) = hp + age * length spells
+poder (Mago _ edad salud hechizos) = salud + edad * length hechizos
 
 daño :: Mago -> Hechizo -> Int
 daño _ (LagrimaFenix _) = 0
-daño mago SectumSempra = if salud mago > 10 then 10 else salud mago `div` 2
+daño mago SectumSempra
+    | salud mago > 10 = 10
+    | otherwise = salud mago `div` 2
 daño _ (Obliviate _) = 0
 daño _ Confundus = 0
 
@@ -49,7 +65,7 @@ hayMagoSinHechizosRincenwind (Academia magos _) = any tieneNombreYSinHechizos ma
 
 -- Saber si todos los magos viejos son ñoños
 esViejoÑoño :: Mago -> Bool
-esViejoÑoño m = edad m > 50 && length (hechizos m) > 3 * edad m
+esViejoÑoño mago = edad mago > 50 && length (hechizos mago) > 3 * edad mago
 
 todosViejosSonÑoños :: Academia -> Bool
 todosViejosSonÑoños (Academia magos _) = all esViejoÑoño (filter ((>50) . edad) magos)
@@ -59,7 +75,7 @@ magosNoPasarianExamen :: Academia -> Int
 magosNoPasarianExamen (Academia magos examen) = length (filter (not . examen) magos)
 
 
--- ================================= Punto 4 =================================
+-- ================================= Punto 4 ================================= dudas
 f _ [y] = y
 f x (y1:y2:ys)
      | x y1 y2 = f x (y1:ys)
@@ -75,12 +91,9 @@ mejorOponente :: Mago -> Academia -> Mago
 mejorOponente mago (Academia magos _) = f (\m1 m2 -> diferenciaDePoder mago m1 >= diferenciaDePoder mago m2) magos
 
 
--- ================================= Punto 5 =================================
+-- ================================= Punto 5 ================================= Error por el tipo data en vez de type hechizo
 noPuedeGanarle :: Mago -> Mago -> Bool
-noPuedeGanarle atacante defensor = salud defensor == salud (foldl (\m h -> aplicarHechizo h m) defensor (hechizos atacante))
-    where
-        aplicarHechizo :: Hechizo -> Mago -> Mago
-        aplicarHechizo (LagrimaFenix c) m = m { salud = salud m + c }
-        aplicarHechizo SectumSempra m = m { salud = salud m - daño m SectumSempra }
-        aplicarHechizo (Obliviate n) m = m { hechizos = drop n (hechizos m) }
-        aplicarHechizo Confundus m = m { salud = salud m - daño m Confundus }
+noPuedeGanarle mago1 mago2 = salud mago1 == leTiraTodosLosHechizos mago1 mago2
+
+leTiraTodosLosHechizos:: Mago -> Mago -> Int
+leTiraTodosLosHechizos magoPrimero magoSegundo = salud (foldl (\acc x -> x acc) magoPrimero (hechizos magoSegundo))
