@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_Ui7n8WrYEe6reutyFELRoQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_Ui7n8mrYEe6reutyFELRoQ" bindingContexts="_Ui7n-2rYEe6reutyFELRoQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;LaFeria.wlk&quot; tooltip=&quot;Parciales/src/LaFeria.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Parciales/src/LaFeria.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;objects.wlk&quot; tooltip=&quot;clase1/src/objects.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/clase1/src/objects.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;LaFeria.wlk&quot; tooltip=&quot;clase1/src/LaFeria.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/clase1/src/LaFeria.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;example.wlk&quot; tooltip=&quot;TeoriaPractica/src/example.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/src/example.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;Clases.wlk&quot; tooltip=&quot;TeoriaPractica/src/Clases.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/src/Clases.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;Herencia.wlk&quot; tooltip=&quot;TeoriaPractica/src/Herencia.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/src/Herencia.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;Listas.wlk&quot; tooltip=&quot;TeoriaPractica/src/Listas.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/src/Listas.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;objects.wlk&quot; tooltip=&quot;TeoriaPractica/src/objects.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/src/objects.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;Practica.wlk&quot; tooltip=&quot;TeoriaPractica/src/Practica.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/src/Practica.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;HerenciaTanque.wlk&quot; tooltip=&quot;TeoriaPractica/src/HerenciaTanque.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/src/HerenciaTanque.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;Herencia.wlk&quot; tooltip=&quot;C:\Users\Mateo\Desktop\test\code\Pdep\Wollok\workspace\TeoriaPractica\src\Herencia.wlk&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/Mateo/Desktop/test/code/Pdep/Wollok/workspace/TeoriaPractica/src/Herencia.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;log4j.properties&quot; tooltip=&quot;TeoriaPractica/src/log4j.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/src/log4j.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Herencia&quot; tooltip=&quot;TeoriaPractica/src/Herencia&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/src/Herencia&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Practica&quot; tooltip=&quot;TeoriaPractica/Practica&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TeoriaPractica/Practica&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;LaFeria.wlk&quot; tooltip=&quot;Parciales/src/LaFeria.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Parciales/src/LaFeria.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;objects.wlk&quot; tooltip=&quot;clase1/src/objects.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/clase1/src/objects.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;LaFeria.wlk&quot; tooltip=&quot;clase1/src/LaFeria.wlk&quot;>&#xD;&#xA;&lt;persistable path=&quot;/clase1/src/LaFeria.wlk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_Ui7n8mrYEe6reutyFELRoQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_Uwx2smrYEe6reutyFELRoQ" x="0" y="0" width="1024" height="768">
@@ -46,9 +46,9 @@
           <tags>persp.viewSC:org.eclipse.ui.views.ResourceNavigator</tags>
           <tags>persp.viewSC:org.eclipse.ui.views.ProblemView</tags>
           <tags>persp.viewSC:org.eclipse.ui.views.ContentOutline</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_U4xVEWrYEe6reutyFELRoQ" selectedElement="_U4xVEmrYEe6reutyFELRoQ">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_U4xVEmrYEe6reutyFELRoQ" containerData="7500" selectedElement="_U4xVF2rYEe6reutyFELRoQ" horizontal="true">
-              <children xsi:type="basic:PartStack" xmi:id="_U4xVE2rYEe6reutyFELRoQ" elementId="topLeft" containerData="3051" selectedElement="_U4xVFmrYEe6reutyFELRoQ">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_U4xVEWrYEe6reutyFELRoQ" selectedElement="_U4xVHGrYEe6reutyFELRoQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_U4xVEmrYEe6reutyFELRoQ" containerData="7500" selectedElement="_U4xVE2rYEe6reutyFELRoQ" horizontal="true">
+              <children xsi:type="basic:PartStack" xmi:id="_U4xVE2rYEe6reutyFELRoQ" elementId="topLeft" containerData="2795" selectedElement="_U4xVFGrYEe6reutyFELRoQ">
                 <children xsi:type="advanced:Placeholder" xmi:id="_U4xVFGrYEe6reutyFELRoQ" elementId="org.eclipse.jdt.ui.PackageExplorer" ref="_U4uRwWrYEe6reutyFELRoQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Java</tags>
@@ -62,10 +62,9 @@
                   <tags>categoryTag:Wollok Diagrams</tags>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_U4xVF2rYEe6reutyFELRoQ" containerData="6949" selectedElement="_U4xVGGrYEe6reutyFELRoQ" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_U4xVF2rYEe6reutyFELRoQ" containerData="7205" selectedElement="_U4xVGGrYEe6reutyFELRoQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_U4xVGGrYEe6reutyFELRoQ" elementId="org.eclipse.ui.editorss" containerData="8338" ref="_U4nkEGrYEe6reutyFELRoQ"/>
                 <children xsi:type="basic:PartStack" xmi:id="_U4xVGWrYEe6reutyFELRoQ" elementId="topRight" containerData="1662" selectedElement="_U4xVGmrYEe6reutyFELRoQ">
-                  <tags>noFocus</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_U4xVGmrYEe6reutyFELRoQ" elementId="org.eclipse.ui.views.ContentOutline" ref="_U4vf4GrYEe6reutyFELRoQ" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -78,6 +77,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_U4xVHGrYEe6reutyFELRoQ" elementId="bottomRight" containerData="2500" selectedElement="_U4xVHmrYEe6reutyFELRoQ">
+              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_U4xVHWrYEe6reutyFELRoQ" elementId="org.eclipse.ui.views.ProblemView" ref="_U4sckGrYEe6reutyFELRoQ" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -139,24 +139,21 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_U4nkEGrYEe6reutyFELRoQ" elementId="org.eclipse.ui.editorss" selectedElement="_U4nkEWrYEe6reutyFELRoQ">
-      <children xsi:type="basic:PartStack" xmi:id="_U4nkEWrYEe6reutyFELRoQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_L18D4NWaEe6ndN27UY-P8w">
+      <children xsi:type="basic:PartStack" xmi:id="_U4nkEWrYEe6reutyFELRoQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Hw6VYNoSEe6iiL_jJKq6yA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_L18D4NWaEe6ndN27UY-P8w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LaFeria.wlk" iconURI="platform:/plugin/org.uqbar.project.wollok.ui/icons/file_wlk.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;LaFeria.wlk&quot; partName=&quot;LaFeria.wlk&quot; title=&quot;LaFeria.wlk&quot; tooltip=&quot;Parciales/src/LaFeria.wlk&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Parciales/src/LaFeria.wlk&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;115&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_Hw6VYNoSEe6iiL_jJKq6yA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HerenciaTanque.wlk" iconURI="platform:/plugin/org.uqbar.project.wollok.ui/icons/file_wlk.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.uqbar.project.wollok.WollokDsl&quot; name=&quot;HerenciaTanque.wlk&quot; partName=&quot;HerenciaTanque.wlk&quot; title=&quot;HerenciaTanque.wlk&quot; tooltip=&quot;TeoriaPractica/src/HerenciaTanque.wlk&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TeoriaPractica/src/HerenciaTanque.wlk&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1782&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.uqbar.project.wollok.WollokDsl</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_U4sckGrYEe6reutyFELRoQ" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.ProblemsView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.ide"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Errors (1 item)&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;300&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Warnings&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;300&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_VKEgcGrYEe6reutyFELRoQ" elementId="org.eclipse.ui.views.ProblemView">
@@ -171,6 +168,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_g1p4IHXsEe6Kgf5XMer8Ng" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -211,7 +210,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_U9T20WrYEe6reutyFELRoQ" elementId="org.eclipse.jdt.ui.PackageExplorer" visible="false"/>
+      <toolbar xmi:id="_U9T20WrYEe6reutyFELRoQ" elementId="org.eclipse.jdt.ui.PackageExplorer"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_U4uRwmrYEe6reutyFELRoQ" elementId="org.uqbar.project.wollok.ui.launch.resultView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Wollok Tests" iconURI="platform:/plugin/org.uqbar.project.wollok.ui.launch/icons/w-tests.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.uqbar.project.wollok.ui.launch.WollokDslExecutableExtensionFactory"/>
@@ -235,7 +234,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_mdPywXXsEe6Kgf5XMer8Ng" elementId="org.uqbar.project.wollok.ui.diagrams.object"/>
+      <toolbar xmi:id="_mdPywXXsEe6Kgf5XMer8Ng" elementId="org.uqbar.project.wollok.ui.diagrams.object" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_U4vf4GrYEe6reutyFELRoQ" elementId="org.eclipse.ui.views.ContentOutline" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Outline" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/outline_co.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.views.contentoutline.ContentOutline"/>
@@ -262,7 +261,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Ux2NsGrYEe6reutyFELRoQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_95CrMNWZEe6ndN27UY-P8w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_UjawXmrYEe6reutyFELRoQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_PsSQgNoSEe6FmKN-KodCCw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_UjawXmrYEe6reutyFELRoQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Ux2NsWrYEe6reutyFELRoQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -281,16 +280,16 @@
       <children xsi:type="menu:ToolBar" xmi:id="_VNEKEGrYEe6reutyFELRoQ" elementId="org.eclipse.team.ui.actionSet">
         <tags>Draggable</tags>
       </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_6CuvYNlnEe69kf4oIJ9KIw" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
+        <tags>Draggable</tags>
+      </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Ux2NtmrYEe6reutyFELRoQ" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_Ux2Nt2rYEe6reutyFELRoQ" elementId="group.nav" toBeRendered="false"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Ux20wGrYEe6reutyFELRoQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_95FugNWZEe6ndN27UY-P8w" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_UjZiHGrYEe6reutyFELRoQ"/>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_-QgwANWZEe6ndN27UY-P8w" elementId="org.uqbar.project.wollok.WollokDsl">
-        <tags>Draggable</tags>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_PsUFsNoSEe6FmKN-KodCCw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_UjZiHGrYEe6reutyFELRoQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Ux20wWrYEe6reutyFELRoQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -329,8 +328,21 @@
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_md3nYNoREe6iiL_jJKq6yA" elementId="topLeft(IDEWindow).(org.uqbar.project.wollok.ui.perspectives.WollokCodingPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_meQB4NoREe6iiL_jJKq6yA" elementId="bottomRight(IDEWindow).(org.uqbar.project.wollok.ui.perspectives.WollokCodingPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
     </trimBars>
-    <trimBars xmi:id="_Ui7n-WrYEe6reutyFELRoQ" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Right"/>
+    <trimBars xmi:id="_Ui7n-WrYEe6reutyFELRoQ" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" toBeRendered="false" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="_meItINoREe6iiL_jJKq6yA" elementId="topRight(IDEWindow).(org.uqbar.project.wollok.ui.perspectives.WollokCodingPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+    </trimBars>
   </children>
   <bindingTables xmi:id="_Ui7n-mrYEe6reutyFELRoQ" contributorURI="platform:/plugin/org.eclipse.ui.workbench" bindingContext="_Ui7n-2rYEe6reutyFELRoQ">
     <bindings xmi:id="_UjzKq2rYEe6reutyFELRoQ" keySequence="CTRL+1" command="_UjZiEmrYEe6reutyFELRoQ"/>
