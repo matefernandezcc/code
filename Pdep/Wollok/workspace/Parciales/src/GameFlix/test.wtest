@@ -1,0 +1,17 @@
+import Gameflix.*
+
+describe "Pruebas con suscripciones"{
+	test "un usuario base actualiza a premium" {
+		const mateo = new Usuario(suscripcion=base)
+		mateo.actualizarSuscripcion(premium)
+	
+		assert.equals(premium, mateo.suscripcion())
+	}
+	
+	test "un usuario base con $75 actualiza a premium y queda con $25" {
+		const mateo = new Usuario(suscripcion=base)
+		mateo.actualizarSuscripcion(premium)
+	
+		assert.equals(25, mateo.plata())
+	}
+}

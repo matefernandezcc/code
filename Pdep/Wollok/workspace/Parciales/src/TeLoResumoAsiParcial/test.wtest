@@ -1,0 +1,52 @@
+import teLoResumoAsiParcial.*
+
+describe "Testeo con resumen de spiderman"{
+	
+	const resumenSpiderman = new Resumen(introduccion = "Resumen Spiderman")
+	const seccion = new Seccion(duracion = 20, speech = "Spiderman 1")
+	const seccion2 = new Seccion(duracion = 20, speech = "Spiderman 2")
+	
+	test "Pt 1) le agrego dos secciones al resumen de Spiderman y la cantidad de secciones es igual a 2" {
+		resumenSpiderman.agregarSeccion(seccion)
+		resumenSpiderman.agregarSeccion(seccion2)
+		assert.equals(2, resumenSpiderman.secciones().size())
+	}
+	
+	test "Pt 2) duracion del resumen de Spiderman con 4 secciones de duracion 20 y con intro de 3 palabras es 110" {
+		const resumen1 = new Resumen(introduccion = "Hola que tal")
+		const seccion3 = new Seccion(duracion = 20, speech = "Spiderman 3")
+		const seccion4 = new Seccion(duracion = 20, speech = "Spiderman 4")
+		resumen1.agregarSeccion(seccion)
+		resumen1.agregarSeccion(seccion2)
+		resumen1.agregarSeccion(seccion3)
+		resumen1.agregarSeccion(seccion4)
+		
+		assert.equals(110, resumen1.duracion())
+	}
+	
+		test "Pt 3) resumen de Black Panther con 2 seccion musical y una normal tiene cancion Lift me up" {
+		const resumen1 = new Resumen(introduccion = "Black Panther")
+		const seccionMusical = new SeccionMusicalizada(cancion = "Lift me up")
+		const seccionMusical2 = new SeccionMusicalizada(cancion = "Love yourself")
+		resumen1.agregarSeccion(seccion)
+		resumen1.agregarSeccion(seccionMusical)
+		resumen1.agregarSeccion(seccionMusical2)
+	
+		assert.that(resumen1.tieneCancion("Lift me up"))
+	}
+	
+		test "Pt 4) resumen de Spiderman referencia al de Black Panther" {
+		const resumenBlackPanther = new Resumen(introduccion = "Black Panther")
+		const seccionReferencia = new SeccionConReferencia(referencia = resumenBlackPanther)
+		resumenSpiderman.agregarSeccion(seccionReferencia)
+	
+		assert.that(resumenSpiderman.referenciaA(resumenBlackPanther))
+	}
+	
+		test "Pt 5) libreto del resumen Spiderman" {
+		resumenSpiderman.agregarSeccion(seccion)
+		resumenSpiderman.agregarSeccion(seccion2)
+		
+		assert.equals("Resumen.Spiderman.Spiderman 1.Spiderman 2", resumenSpiderman.libreto())
+	}
+}

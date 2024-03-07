@@ -5,7 +5,7 @@ class Vaca {
 	method energia() = energia
 	
 	method estaContenta(){
-		return (energia > 100)
+		return energia > 100
 	}
 	
 	method descansar(horas){

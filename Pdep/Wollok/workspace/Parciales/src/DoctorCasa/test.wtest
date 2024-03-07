@@ -1,0 +1,95 @@
+import DoctorCasa.*
+
+describe "Test punto 1"{
+	
+	test "malaria con 1000 celulas se atenua en 100 y queda en 900" {
+		const malaria = new EnfermedadInfecciosa()
+		malaria.atenuar(100)
+		
+		assert.equals(900, malaria.celulasAmenazadas())
+	}
+
+	test "lupus con 1000 celulas se atenua en 500 y queda en 500" {
+		const lupus = new EnfermedadAutoinmune()
+		lupus.atenuar(500)
+		
+		assert.equals(500, lupus.celulasAmenazadas())
+	}
+
+}
+
+describe "Test punto 2"{
+	
+	test "Cameron, con 10 de dosis atiende a Logan con malaria de 1000 celulas y queda atenuada en 850" {
+		const cameron = new Medico(dosis = 10)
+		const logan = new Paciente()
+		const malaria = new EnfermedadInfecciosa()
+		logan.contraerEnfermedad(malaria)
+		
+		cameron.atender(logan)
+		
+		assert.equals(850, malaria.celulasAmenazadas())
+	}
+	
+	test "Cameron, contrajo una enfermedad y trata de curarse asi mismo, atenuando en 850" {
+		const cameron = new Medico(dosis = 10)
+		const malaria = new EnfermedadInfecciosa()
+		cameron.contraerEnfermedad(malaria)
+		
+		assert.equals(850, malaria.celulasAmenazadas())
+	}
+
+}
+
+describe "Test punto 3"{
+	
+	test "House sin subordinados trata a Logan y no cambia nada" {
+		const house = new JefeDeDepartamento()
+		const logan = new Paciente()
+		const malaria = new EnfermedadInfecciosa()
+		logan.contraerEnfermedad(malaria)
+		
+		house.atender(logan)
+		
+		assert.equals(1000, malaria.celulasAmenazadas())
+	}
+	
+		test "House con subordinados trata a Logan y atenua 150 celulas" {
+		const house = new JefeDeDepartamento()
+		const logan = new Paciente()
+		const malaria = new EnfermedadInfecciosa()
+		logan.contraerEnfermedad(malaria)
+
+		const cameron = new Medico(dosis = 10)
+		house.agregarSubordinado(cameron)
+		
+		house.atender(logan)
+		
+		assert.equals(850, malaria.celulasAmenazadas())
+	}
+}
+describe "Test punto 4"{
+	
+	test "House con Cameron como subordinado, contrae malaria" {
+		const house = new JefeDeDepartamento()
+		const cameron = new Medico(dosis = 10)
+		const malaria = new EnfermedadInfecciosa()
+		house.agregarSubordinado(cameron)
+		house.contraerEnfermedad(malaria)
+		
+		assert.equals(850, malaria.celulasAmenazadas())
+	}
+}
+
+describe "Test punto 5"{
+	
+	test "House contrae la muerte, trata de curase y no puede" {
+		const house = new JefeDeDepartamento()
+		const cameron = new Medico(dosis = 10)
+		house.agregarSubordinado(cameron)
+		house.contraerEnfermedad(muerte)
+		
+		assert.equals(0, house.temperatura())
+		assert.throwsException(house.atender(house))
+	}
+}
