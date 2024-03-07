@@ -34,7 +34,7 @@ class Empleados{
 
 class Desarrollador inherits Empleados {
 	override method rolEstaInvitado() =
-		self.sabeProgramar(wollok) or self.sabeProgramarLenguajeAntiguo()
+		self.sabeProgramar("wollok") or self.sabeProgramarLenguajeAntiguo()
 	
 	
 	method sabeProgramar(lenguaje) = lenguajesSabidos.any
@@ -84,7 +84,7 @@ object acme {
 }
 
 class Mesa{
-	const numero
+	const property numero
 	const asistentes = #{}
 	
 	method agregar(asistente){
