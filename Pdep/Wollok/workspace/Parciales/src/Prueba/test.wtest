@@ -1,0 +1,181 @@
+import plantaciones.*
+
+describe "P1) Saber si un terreno es rico" {
+	
+	test "El campo abierto ES rico y el invernadero NO" {
+		const humidificador = new Humidificador(humedad = 10)
+		const campoAbierto = new CampoAbierto(riquezaSuelo = 250)
+		const invernadero = new Invernadero(dispositivoInstalado = humidificador, cultivos = ["papa"], capacidadMaxima = 1)
+		
+		assert.that(campoAbierto.esRico() and !invernadero.esRico())
+	}
+	
+	test "El campo abierto NO es rico y el invernadero SI" {
+		const humidificador = new Humidificador(humedad = 5)
+		const campoAbierto = new CampoAbierto(riquezaSuelo = 50)
+		const invernadero = new Invernadero(dispositivoInstalado = humidificador, cultivos = ["papa"], capacidadMaxima = 10)
+		
+		assert.that(!campoAbierto.esRico() and invernadero.esRico())
+	}
+}
+
+describe "P2) Conocer la media nutricional de un terreno" {
+	
+	test "La media nutricional del campo abierto (rico) es de 3000" {
+		const campoAbierto = new CampoAbierto(riquezaSuelo = 200)
+		
+		// Cultivos para el campo que den como valor nutricional 3000 + 0
+		const papa = new Papa()
+		const algodon = new Algodon()
+		papa.valorNutricionalEn(campoAbierto)
+		
+		campoAbierto.agregarCultivo(papa)
+		campoAbierto.agregarCultivo(algodon)
+		
+		assert.equals(3000, campoAbierto.mediaNutricional())
+	}
+	
+		test "La media nutricional del campo abierto (no rico) es de 3000" {
+		const campoAbierto = new CampoAbierto(riquezaSuelo = 50)
+		
+		// Cultivos para el campo que den como valor nutricional 3000 + 0
+		const papa = new Papa()
+		const manzana = new Fruta(precio = 100)
+		const arbol = new ArbolFrutal(edad = 10, fruta = manzana)
+		
+		campoAbierto.agregarCultivo(papa)
+		campoAbierto.agregarCultivo(arbol)
+		
+		// 1500 + 
+		assert.equals(1530, campoAbierto.mediaNutricional())
+	}
+	
+	
+}
+
+describe "P3) Conocer el valor neto de un terreno" {
+	
+	test "Valor neto del campo abierto (rico) es de 3000" {
+		const campoAbierto = new CampoAbierto(tamanio = 1, riquezaSuelo = 200)
+		
+		// Instancias de cultivos
+		const papa = new Papa()
+		const algodon = new Algodon()
+		const manzana = new Fruta(precio = 100)
+		const arbol = new ArbolFrutal(edad = 10, fruta = manzana)
+		
+		
+		campoAbierto.agregarCultivo(papa)
+		campoAbierto.agregarCultivo(algodon)
+		campoAbierto.agregarCultivo(arbol)
+		
+		
+		assert.equals(1600, campoAbierto.valorNeto())
+	}
+	
+		test "Valor neto del campo abierto (no rico) es de 3000" {
+		const campoAbierto = new CampoAbierto(riquezaSuelo = 50)
+		
+		// Instancias de cultivos
+		const papa = new Papa()
+		const manzana = new Fruta(precio = 100)
+		const arbol = new ArbolFrutal(edad = 10, fruta = manzana)
+		
+		
+		campoAbierto.agregarCultivo(papa)
+		campoAbierto.agregarCultivo(arbol)
+		
+		// 1500 + 
+		assert.equals(0, campoAbierto.valorNeto())
+	}
+}
+
+describe "P4) Plantar cultivo validaciones" {
+	
+	test "Agregar 5 cultivos a un campo que solo acepta 4 cultivos" {
+		const campoAbierto = new CampoAbierto(tamanio = 1, riquezaSuelo = 200)
+		
+		// Instancias de cultivos
+		const papa = new Papa()
+		
+		const algodon = new Algodon()
+		
+		const manzana = new Fruta(precio = 100)
+		const arbol = new ArbolFrutal(edad = 10, fruta = manzana)
+		
+		const coco = new Fruta(precio = 350)
+		const palmeraCocos = new PalmeraTropical(edad = 3, fruta = coco)
+		
+		const naranja = new Fruta(precio = 150)
+		const palmeraNaranjas = new PalmeraTropical(edad = 7, fruta = naranja)
+		
+		campoAbierto.agregarCultivo(papa)
+		campoAbierto.agregarCultivo(algodon)
+		campoAbierto.agregarCultivo(arbol)
+		campoAbierto.agregarCultivo(palmeraCocos)
+		
+		try {
+			campoAbierto.agregarCultivo(palmeraNaranjas)
+		} catch e : Exception {
+			assert.equals(4, campoAbierto.cultivos().size())
+		}
+	}
+	
+		test "Cultivo no se puede plantar porque el campo no es rico" {
+		const campoAbierto = new CampoAbierto(tamanio = 1, riquezaSuelo = 50)
+		
+		// Instancias de cultivos
+		const naranja = new Fruta(precio = 150)
+		const palmeraNaranjas = new PalmeraTropical(edad = 7, fruta = naranja)
+		
+		try {
+			campoAbierto.agregarCultivo(palmeraNaranjas)
+		} catch e : Exception {
+			assert.equals(0, campoAbierto.cultivos().size())
+		}
+	}
+}
+
+describe "P5) Palmeras tropicales" {
+	
+	test "Se instancia una palmera y se agrega al cultivo dejando 4 cultivos en el campo" {
+		const campoAbierto = new CampoAbierto(tamanio = 1, riquezaSuelo = 200)
+		
+		// Instancias de cultivos
+		const papa = new Papa()
+		const algodon = new Algodon()
+		const manzana = new Fruta(precio = 100)
+		const arbol = new ArbolFrutal(edad = 10, fruta = manzana)
+		campoAbierto.agregarCultivo(papa)
+		campoAbierto.agregarCultivo(algodon)
+		campoAbierto.agregarCultivo(arbol)
+		
+		const coco = new Fruta(precio = 350)
+		const palmera = new PalmeraTropical(edad = 3, fruta = coco)
+		campoAbierto.agregarCultivo(palmera)
+		
+		assert.equals(4, campoAbierto.cultivos().size())
+	}
+	
+		test "Valor neto del campo anterior con la palmera tropical es igual a 3850" {
+		const campoAbierto = new CampoAbierto(tamanio = 1, riquezaSuelo = 200)
+		
+		// Instancias de cultivos
+		const papa = new Papa()
+		
+		const algodon = new Algodon()
+		
+		const manzana = new Fruta(precio = 100)
+		const arbol = new ArbolFrutal(edad = 10, fruta = manzana)
+		
+		const coco = new Fruta(precio = 350)
+		const palmera = new PalmeraTropical(edad = 3, fruta = coco)
+		
+		campoAbierto.agregarCultivo(papa)
+		campoAbierto.agregarCultivo(algodon)
+		campoAbierto.agregarCultivo(arbol)
+		campoAbierto.agregarCultivo(palmera)
+		
+		assert.equals(3350, campoAbierto.valorNeto())
+	}
+}
