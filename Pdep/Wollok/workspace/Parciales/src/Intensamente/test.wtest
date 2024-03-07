@@ -2,20 +2,28 @@ import Intensamente.*
 
 describe "Riley instanciada"{
 	
-	test "Riley vive 2 eventos y su lista de recuerdos es igual a 2" {
+	test "Riley vive un evento con mas de 500 de felicidad y se convierte en su pensamiento central" {
+		const riley = new Persona(emocionDominante = alegria, pensamientoCentral = "jugar")
+		riley.emocionDominante().asentar(riley, "Comer asado")
 		
-		const riley = new Persona(emocionDominante = "alegria")
-		riley.vivirEvento("Ir a comprar helado")
-		riley.vivirEvento("Comer asado")
+		assert.equals("Comer asado", riley.pensamientoCentral())
+	}
+	
 		
-		assert.equals(2, riley.recuerdos().size())
+	test "Riley vive un evento con menos de 500 de felicidad y NO se convierte en su pensamiento central" {
+		const riley = new Persona(felicidad = 200, emocionDominante = alegria, pensamientoCentral = "jugar")
+		riley.emocionDominante().asentar(riley, "Comer asado")
+		
+		assert.equals("jugar", riley.pensamientoCentral())
 	}
 }
 
 describe "Punto 1"{
-	test "testX" {
-	
-		assert.that(true)
+	test "Riley vive 1 evento y su lista de recuerdos es igual a 1" {
+		const riley = new Persona(emocionDominante = alegria, pensamientoCentral = "jugar")
+		riley.vivirEvento("Ir a comprar helado")
+		
+		assert.equals(2, riley.recuerdos().size())
 	
 	}
 }
