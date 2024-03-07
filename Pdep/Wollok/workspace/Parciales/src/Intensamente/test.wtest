@@ -1,0 +1,29 @@
+import Intensamente.*
+
+describe "Riley instanciada"{
+	
+	test "Riley vive 2 eventos y su lista de recuerdos es igual a 2" {
+		
+		const riley = new Persona(emocionDominante = "alegria")
+		riley.vivirEvento("Ir a comprar helado")
+		riley.vivirEvento("Comer asado")
+		
+		assert.equals(2, riley.recuerdos().size())
+	}
+}
+
+describe "Punto 1"{
+	test "testX" {
+	
+		assert.that(true)
+	
+	}
+}
+
+describe "Punto 2"{
+	test "testX" {
+	
+		assert.that(true)
+	
+	}
+}
