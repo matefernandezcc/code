@@ -22,6 +22,7 @@ gnomos cantidad = Criatura {
     peligrosidad = 2 ^ cantidad,
     criterioParaDeshacer = tieneSopladorDeHojas
 }
+tieneItem :: Item -> Persona -> Bool
 tieneItem item = elem item . items
 tieneSopladorDeHojas = tieneItem "sopladorDeHojas"
 diezGnomos = gnomos 10
