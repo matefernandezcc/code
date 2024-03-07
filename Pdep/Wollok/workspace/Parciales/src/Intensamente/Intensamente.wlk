@@ -23,21 +23,13 @@ class Recuerdo{
 }
 
 object alegria{
-	
+	method asentar() {}
 }
 
 object tristeza{
-	
+	method asentar() {}
 }
 
-object disgusto{
-	
-}
-
-object furia{
-	
-}
-
-object temor{
-	
+class EmocionApatica{
+	method asentar() {}
 }
