@@ -163,5 +163,54 @@ rambo = Rambo{
 
 
 -- ============================================ CURRIFICACION Y APLICACION PARCIAL ============================================
+
 -- f:: a -> b -> c -> d == f:: a -> (b -> (c -> d)) Basicamente se puede postergar la aplicacion de una funcion
+
+-- ============================================ NOTACION POINT FREE ============================================
+
+-- promociona alumno = (not. (<8).nota) alumno
+
+-- Variante POINT FREE
+-- promociona = (not. (<8).nota)
+
+
+-- ============================================ Practica ============================================
+
+-- Inferencia
+    -- a) (.):: (b->c)->(a->b)->(a->c)
+    -- b) f = (>0).g.h.i.(*3)
+    -- f:: Num a => a -> Bool
+
+-- Para un dominio dado con Clientes y Productos definir
+data Cliente = Cliente {
+    saldo::Float,
+    esVip::Bool,
+    nombre::String
+} deriving(Eq, Show)
+
+data Producto = Producto{
+    tipo:: String,
+    precio:: Float
+} deriving(Eq, Show)
+
+cambiarSaldo cliente delta = cliente{
+    saldo = saldo cliente + delta
+}
+
+nuevoClienteVIP:: String -> Cliente -- Ejemplo de aplicacion parcial, espera una funcion con el 3er parametro del cliente para instanciar un Cliente
+nuevoClienteVIP = Cliente 0 True
+
+comprar:: Producto -> Cliente -> Cliente
+comprar producto cliente = (cambiarSaldo cliente.negate.precioNeto) producto
+precioNeto:: Producto -> Float
+precioNeto = (*1.21).precio
+
+comprarEnPromocion:: Producto -> Producto -> Float -> Cliente -> Cliente -- Se puede hacer con flip tambien
+comprarEnPromocion prod1 prod2 descuento = (`cambiarSaldo`descuento) . comprar prod2 . comprar prod1 -- Se usa cambiarSaldo como infija para acomodar los parametros
+
+
+
+-- ========================================================================================
+-- =                                       CLASE 5                                        =
+-- ========================================================================================
 
