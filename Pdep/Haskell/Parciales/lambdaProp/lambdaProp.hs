@@ -44,3 +44,11 @@ menor f x y = f x < f y
 
 -- b
 ejemploDeOrdenarSegun = ordenarSegun (mayor length) ["1", "esteTercero", "dos"]
+
+
+-- ====================== Punto 2 ======================
+-- 2.a
+ubicadoEn:: [Barrio] -> Depto -> Bool
+ubicadoEn barrios = (`elem` barrios) . barrio
+
+--2.b
