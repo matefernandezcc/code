@@ -96,7 +96,7 @@ id:: Nota -> Nota
 id nota@(Nota valor observaciones) = nota
 
 notaFinal:: Alumno -> Nota
-notaFinal alumno = Nota ((valor(notaFuncional alumno) + valor(notaLogico alumno) + valor(notaObjetos alumno)) `div` 3) "Nota final"
+notaFinal alumno = Nota ((valor (notaFuncional alumno) + valor (notaLogico alumno) + valor (notaObjetos alumno)) `div` 3) "Nota final"
 
 aprobado:: Alumno -> Bool
 aprobado alumno
@@ -174,7 +174,7 @@ rambo = Rambo{
 -- promociona = (not. (<8).nota)
 
 
--- ============================================ Practica ============================================
+-- ====================== Practica ======================
 
 -- Inferencia
     -- a) (.):: (b->c)->(a->b)->(a->c)
@@ -214,3 +214,130 @@ comprarEnPromocion prod1 prod2 descuento = (`cambiarSaldo`descuento) . comprar p
 -- =                                       CLASE 5                                        =
 -- ========================================================================================
 
+-- ============================================ ORDEN SUPERIOR ============================================
+data Carta = Carta{
+    nombreCarta::String,
+    tags::[String],
+    velocidad:: Int,
+    altura:: Int,
+    peso:: Int,
+    fuerza:: Int,
+    peleas:: Int
+} deriving(Eq, Show)
+
+ganadoraSegun:: (Carta -> Int) -> Carta -> Carta -> Carta
+ganadoraSegun criterio carta1 carta2
+    | criterio carta1 > criterio carta2 = carta1
+    | otherwise = carta2
+
+-- ============================================ EXPRESIONES LAMBDA ============================================
+ganadoraSegunIMC = ganadoraSegun (\carta -> peso carta `div` altura carta ^2)
+
+
+-- ============================================ LISTAS ============================================
+
+-- [a] solo admiten un unico tipo de dato por lista
+
+-- Usando pattern matching retorno la cabeza o la cola de la lista
+--head:: [a] -> a
+--head (x:_) = x
+
+--tail:: [a] -> [a]
+--tail (_:xs) = xs
+
+--null:: [a] -> Bool
+--null [] = True
+--null _ = False
+
+tamanio:: [a] -> Int -- En haskell se llama length
+tamanio [] = 0
+tamanio (_:xs) = 1 + tamanio xs
+
+elemento:: Eq a => a -> [a] -> Bool -- En haskell se llama elem
+elemento _ [] = False
+elemento x (y:ys) = y == x || elemento x ys
+
+estaOrdenada:: Ord a => [a] -> Bool
+estaOrdenada [] = True
+estaOrdenada [x] = True
+estaOrdenada (x:y:ys) = x < y && estaOrdenada (y:ys)
+
+
+-- ============================================ LISTAS EN ALTO NIVEL ============================================
+
+-- ====================== MAP ======================
+-- Quiero el nombre de cada carta
+nombres:: [Carta] -> [String]
+nombres = map nombreCarta
+
+-- Quiero la fuerza de cada carta
+fuerzas:: [Carta] -> [Int]
+fuerzas = map fuerza
+
+-- Quiero la longitud del nombre de cada carta
+longitudDeNombres:: [Carta] -> [Int]
+longitudDeNombres = map (length . nombreCarta)
+
+-- ====================== FILTER ======================
+-- Quiero las cartas de superheroes sin peleas ganadas
+nuevos:: [Carta] -> [Carta]
+nuevos = filter ((==0).peleas)
+
+-- Cartas con cuyos nombres tienen "X"
+conX:: [Carta] -> [Carta]
+conX = filter (elem 'X'.nombreCarta)
+
+-- Cartas con mas peso que altura
+pesadas:: [Carta] -> [Carta]
+pesadas = filter (\carta -> peso carta > altura carta)
+
+-- ====================== ALL y ANY ======================
+-- Quiero saber si hay cartas de superheroes nuevos
+hayNuevos:: [Carta] -> Bool
+hayNuevos = any ((==0).peleas)
+
+-- Si todos los nombres tienen 'X'
+todosConX:: [Carta] -> Bool
+todosConX = all (elem 'X'.nombreCarta)
+
+-- Si existen cartas con mas peso que altura
+hayPesada:: [Carta] -> Bool
+hayPesada = any (\carta -> peso carta > altura carta)
+
+-- ====================== FOLD ======================
+-- Quiero saber el total de peleas ganadas
+peleasTotales:: [Carta] -> Int
+peleasTotales = foldr (\carta acum -> acum + peleas carta) 0
+
+-- Todos los nombres de un string intercalados con ";"
+nombresSeparados:: [Carta] -> String
+nombresSeparados = foldr (\carta acum -> nombreCarta carta ++ ";" ++ acum) ""
+
+-- La carta con la mayor fuerza
+masFuerte:: [Carta] -> Carta
+masFuerte cartas = foldr (ganadoraSegun fuerza) (head cartas) (tail cartas)
+
+masFuerte1:: [Carta] -> Carta
+masFuerte1 = foldr1 (ganadoraSegun fuerza)
+
+-- El fold convierte 1:2:3:[] en 1+2+3+0
+-- cambia los cons por la funcion reductora y la lista vacia por la semilla
+
+-- ====================== PRACTICA ======================
+ponerTag:: String -> Carta -> Carta
+ponerTag tag carta = carta {tags = tag : tags carta}
+
+quitarTag:: String -> Carta -> Carta
+quitarTag tag carta = carta {tags = filter (/= tag) (tags carta)}
+
+-- Punto 1
+batiNombres:: [Carta] -> [String]
+batiNombres = filter ((== "bat"). take 3) . map nombreCarta
+
+-- Punto 2
+hayCartasConTodosLosTagsMuyLargos:: [Carta] -> Bool
+hayCartasConTodosLosTagsMuyLargos = any (all ((>10). length) . tags)
+
+-- Punto 3
+aliensCorregidos:: [Carta] -> [Carta]
+aliensCorregidos = map (ponerTag "alien" . quitarTag "alguien") . filter (elem "alguien". tags)
