@@ -54,16 +54,45 @@ minimoNivel = minimum . niveles
 nivelesMayoresA:: Int -> (Persona -> Int)
 nivelesMayoresA n = length . filter (>n) . niveles
 
+
+
 -- ================================= Punto 2 =================================
 efectosDePocion:: Pocion -> [Efecto]
 efectosDePocion = concatMap efectos . ingredientes -- los efectos no se pueden mostrar por consola ya que son funciones
+
+
 
 -- ================================= Punto 3 =================================
 pocionesHardcore:: [Pocion] -> [String]
 pocionesHardcore =  map nombrePocion . filter ((>4).length.efectosDePocion) -- faltan los nombres [String] #TODO
 
 pocionesProhibidas:: [Pocion] -> Int
-pocionesProhibidas pociones = (. filter (\p -> tieneIngredienteProhibido (ingredientes p) )) pociones
+pocionesProhibidas =  length . filter esProhibida
+esProhibida:: Pocion -> Bool
+esProhibida = any (flip elem nombresDeIngredientesProhibidos . nombreIngrediente) . ingredientes 
 
-tieneIngredienteProhibido:: [Ingrediente] -> Bool
-tieneIngredienteProhibido ingredientes = (. concat nombresDeIngredientesProhibidos) ingredientes
+todasDulces:: [Pocion] -> Bool
+todasDulces = all (any (("azucar" ==). nombreIngrediente). ingredientes)
+
+
+
+-- ================================= Punto 4 =================================
+tomarPocion:: Pocion -> Efecto
+tomarPocion pocion personaInicial = 
+    (foldl (\persona efecto -> efecto persona) personaInicial. efectosDePocion) pocion
+
+
+
+-- ================================= Punto 5 =================================
+esAntidotoDe:: Pocion -> Pocion -> Persona -> Bool
+esAntidotoDe pocion antidoto persona =
+    ((==persona) . tomarPocion antidoto . tomarPocion pocion) persona
+
+
+
+-- ================================= Punto 6 =================================
+personaMasAfectada:: Pocion -> (Persona -> Int) -> [Persona] -> Persona
+personaMasAfectada pocion criterio = maximoSegun (criterio . tomarPocion pocion)
+
+-- Ejemplo de uso:
+personaMasAfectadaEjemplo = personaMasAfectada (Pocion "placebo" []) (nivelesMayoresA 10) [persona]
