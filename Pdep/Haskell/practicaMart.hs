@@ -50,9 +50,6 @@ sumatoria lista = reducirV1 lista 0 (+)
 -- Productoria
 productoria lista = reducirV1 lista 1 (*)
 
--- max/min
-maximo [x] = x
-maximo (x:y:ys) = max x (maximo xs)
 
 
 --          ==============================================  FOLD ==============================================
@@ -66,11 +63,5 @@ longitud = reducir (\_ acumulado -> 1 + acumulado) 0 -- la funcion lamba tiene q
 
 ----------------------------------------------- Fold
 -- foldl funcion semilla lista
-
--- max/min
-maximo lista = foldl (>) (head lista) lista
-
--- Restatoria
-
 
 
