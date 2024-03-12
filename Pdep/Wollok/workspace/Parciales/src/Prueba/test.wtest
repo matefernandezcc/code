@@ -50,7 +50,11 @@ describe "P2) Conocer la media nutricional de un terreno" {
 		assert.equals(1530, campoAbierto.mediaNutricional())
 	}
 	
-	
+		test "Media nutricional de un campo sin ningun cultivo es igual a 0" {
+		const campoSinCultivos = new CampoAbierto(riquezaSuelo = 110)
+		
+		assert.equals(0, campoSinCultivos.mediaNutricional())
+	}
 }
 
 describe "P3) Conocer el valor neto de un terreno" {
@@ -88,9 +92,15 @@ describe "P3) Conocer el valor neto de un terreno" {
 		// 1500 + 
 		assert.equals(0, campoAbierto.valorNeto())
 	}
+	
+		test "Valor neto de un campo sin ningun cultivo" {
+		const campoSinCultivos = new CampoAbierto(riquezaSuelo = 110)
+		
+		assert.equals(0, campoSinCultivos.valorNeto())
+	}
 }
 
-describe "P4) Plantar cultivo validaciones" {
+describe "P4) Validaciones para poder plantar un cultivo " {
 	
 	test "Agregar 5 cultivos a un campo que solo acepta 4 cultivos" {
 		const campoAbierto = new CampoAbierto(tamanio = 1, riquezaSuelo = 200)
@@ -128,7 +138,7 @@ describe "P4) Plantar cultivo validaciones" {
 		const naranja = new Fruta(precio = 150)
 		const palmeraNaranjas = new PalmeraTropical(edad = 7, fruta = naranja)
 		
-		try {
+		try { // Tiraba la excepcion y no seguia ejecutando tuve que hacer try-catch
 			campoAbierto.agregarCultivo(palmeraNaranjas)
 		} catch e : Exception {
 			assert.equals(0, campoAbierto.cultivos().size())
@@ -141,7 +151,7 @@ describe "P5) Palmeras tropicales" {
 	test "Se instancia una palmera y se agrega al cultivo dejando 4 cultivos en el campo" {
 		const campoAbierto = new CampoAbierto(tamanio = 1, riquezaSuelo = 200)
 		
-		// Instancias de cultivos
+		// Hasta aca hay 3 cultivos, papa algodon y arbol frutal
 		const papa = new Papa()
 		const algodon = new Algodon()
 		const manzana = new Fruta(precio = 100)
@@ -150,6 +160,8 @@ describe "P5) Palmeras tropicales" {
 		campoAbierto.agregarCultivo(algodon)
 		campoAbierto.agregarCultivo(arbol)
 		
+		
+		// Se agrega la palmera dejando 4 cultivos en el campo abierto
 		const coco = new Fruta(precio = 350)
 		const palmera = new PalmeraTropical(edad = 3, fruta = coco)
 		campoAbierto.agregarCultivo(palmera)
@@ -157,10 +169,9 @@ describe "P5) Palmeras tropicales" {
 		assert.equals(4, campoAbierto.cultivos().size())
 	}
 	
-		test "Valor neto del campo anterior con la palmera tropical es igual a 3850" {
+		test "Valor neto del campo del test anterior con la palmera tropical es igual a 3850" {
 		const campoAbierto = new CampoAbierto(tamanio = 1, riquezaSuelo = 200)
 		
-		// Instancias de cultivos
 		const papa = new Papa()
 		
 		const algodon = new Algodon()
