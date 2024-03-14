@@ -25,7 +25,7 @@ data Ingrediente = Ingrediente {
 } deriving (Show, Eq)
 
 trago = Trago "Wiski" [Componente Ingrediente{nombreIng= "Agua", nivelAzucar = 1, nivelAlcohol = 0, nivelDeColor = 0 } 5,Componente Ingrediente{nombreIng= "Coca", nivelAzucar = 25, nivelAlcohol = 0, nivelDeColor = 3 } 10]
-mateo = Persona "mateo" 0 0 []
+mateo = Persona "mateo" 1 1 []
 
 cambiarIngrediente :: (Float, Float, Float) -> Ingrediente -> Ingrediente
 cambiarIngrediente (azucar, alcohol, color) ingrediente = ingrediente {
@@ -83,10 +83,10 @@ licuadora = batir 120 . agregarComponentes azucar . agregarComponentes (hielo 5)
 -- Falta agregar 10 de azucar a cada componente
 
    --1.c
-coctelera:: Float -> Bool -> ArmadoraDeTragos
-coctelera segundos flambeado componentes
-    | flambeado == True = cambiarIngrediente (2, (alcohol (take 1 componentes)) / 2, 5) (take 1 $ componentes)
-    | otherwise = agregarComponentes (hielo 2) componentes
+--coctelera:: Float -> Bool -> ArmadoraDeTragos
+--coctelera segundos flambeado componentes
+--    | flambeado == True = cambiarIngrediente (2, (alcohol (take 1 componentes)) / 2, 5) (take 1 $ componentes)
+--    | otherwise = agregarComponentes (hielo 2) componentes
 
 -- Ejemplos para testear
 hielo cantidad = Componente {
@@ -102,7 +102,7 @@ hielo cantidad = Componente {
 azucar = Componente {
     ingrediente =
     Ingrediente {
-        nombreIng= "Hielo",
+        nombreIng= "Azucar",
         nivelAzucar= 10,
         nivelAlcohol= 0,
         nivelDeColor= 0
