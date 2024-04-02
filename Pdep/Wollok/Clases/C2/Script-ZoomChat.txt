@@ -1,0 +1,12 @@
+00:13:14	Matias Schvartzman:	se puede pasar el enunciado?
+00:13:19	Martin Gotelli Ferenaz:	Va
+00:13:24	Martin Gotelli Ferenaz:	https://docs.google.com/document/d/1Fk8zajt6TCN7D6QmOvrix9I59ifCnFwZLYWwAaD_lsM/edit
+00:13:30	Matias Schvartzman:	Reacted to "https://docs.google...." with ❤️
+00:16:39	Fernando Aquino:	un var
+00:21:46	Genty Clarke Lamothe:	podes instanciar la clase y el objecto no
+00:26:21	Fernando Aquino:	le falta la s a instrumento
+01:01:06	Martin Gotelli Ferenaz:	“Es la guitarra de Riorio” se tiene que leer como si fuera Miranda! cantando
+01:01:21	Matias Schvartzman:	Reacted to "“Es la guitarra de R..." with 😂
+01:01:23	Constanza:	Reacted to "“Es la guitarra de R..." with 😂
+01:25:11	Francisco Ochoa:	No esta sumando, esta retornando nomas
+01:25:28	Francisco Ochoa:	aa ok

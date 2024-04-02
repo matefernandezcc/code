@@ -1,0 +1,12 @@
+00:11:36	Martin Gotelli Ferenaz:	https://docs.google.com/document/d/11XMvYJKG_k45YB83S9_5jjwa2Zl7XbMAoMmr518ahk4/edit
+00:14:00	Francisco Ochoa:	Son personas con un rol como atributo
+00:17:12	Francisco Ochoa:	la lista es parte del festejo
+00:18:38	Francisco Ochoa:	saber programar
+00:22:50	Francisco Ochoa:	la de rol, porque puede cambiar
+00:32:44	Francisco Ochoa:	le falta el property
+00:48:02	Francisco Ochoa:	no hace falta crearlo devuelta
+00:48:10	Francisco Ochoa:	por la identidad
+02:16:04	Constanza:	jajaj si
+02:32:47	Constanza:	yo tp
+02:34:23	Genty Clarke Lamothe:	estaria mal class fiesta en vez object?
+02:34:59	Genty Clarke Lamothe:	gracias

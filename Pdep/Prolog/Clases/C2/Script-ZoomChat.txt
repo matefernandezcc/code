@@ -1,0 +1,7 @@
+00:15:28	Francisco Ochoa:	malaInfluencia(Jugador,OtroJugador):- % ¿Esta bien pasarle de nuevo jugador y otroJugador si puedeSerSuspendido ya es inversible?    jugador(Jugador),    jugador(OtroJugador),    puedeSerSuspendido(Jugador),    puedeSerSuspendido(OtroJugador),    seConocen(Jugador,OtroJugador).
+00:16:04	Francisco Ochoa:	% a. un jugador puede ser suspendido si tomó una sustancia que está prohibidapuedeSerSuspendido(Jugador):-       tomo(Jugador, AlgoProhibido),    prohibida(AlgoProhibido).% b. un jugador puede ser suspendido si tomó un compuesto que tiene una sustancia prohibidaprohibida(compuesto(Compuesto)):-    composicion(Compuesto,Sustancias),    member(Sustancia,Sustancias),    sustanciaProhibida(Sustancia).% c. o un jugador puede ser suspendido si tomó una cantidad excesiva de un producto (más que el máximo permitido):prohibida(sustancia(Sustancia)):-    sustanciaProhibida(Sustancia).prohibida(producto(Producto,Cantidad)):-    maximo(Producto,CantidadMaxima),    Cantidad > CantidadMaxima.%3) Si agregamos los siguientes hechos:amigo(maradona, caniggia).amigo(caniggia, balbo).amigo(balbo, chamot).amigo(balbo, pedemonti).
+00:41:28	Martin Gotelli Ferenaz:	https://docs.google.com/document/d/1BrfeZC53k0SxiaHXsHpMnXUIh_pHdJX2wR8TVe3OWlI/edit
+00:42:24	Martin Gotelli Ferenaz:	https://docs.google.com/document/d/1uQ4TJr1U-GJwDpVfox4QpxLUL5P6HXXSrzteygT-twM/edit
+00:42:53	Martin Gotelli Ferenaz:	https://docs.google.com/document/d/1Fk8zajt6TCN7D6QmOvrix9I59ifCnFwZLYWwAaD_lsM/edit
+00:46:40	Constanza:	ok
+01:59:50	maxi:	todo
