@@ -20,6 +20,7 @@ int main(int argc, char* argv[]){
 
     // Muevo el puntero al inicio y leo desde ahi
     fseek(archivo,0,SEEK_SET);
+    
     fread(&registro,sizeof(rg), 1,archivo);
 
     printf("%d\n", registro.a);
