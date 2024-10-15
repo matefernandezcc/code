@@ -329,7 +329,7 @@ ponerTag tag carta = carta {tags = tag : tags carta}
 
 quitarTag:: String -> Carta -> Carta
 quitarTag tag carta = carta {tags = filter (/= tag) (tags carta)}
-o
+
 -- Punto 1
 batiNombres:: [Carta] -> [String]
 batiNombres = filter ((== "bat"). take 3) . map nombreCarta
