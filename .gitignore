@@ -1,4 +1,8 @@
 # C compiler
 a.out
 *.out
+
+# Wollok logs and more
 log/wollok.log
+Pdep/Wollok/configuration
+Pdep/Wollok/workspace
