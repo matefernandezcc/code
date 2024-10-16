@@ -1,3 +1,4 @@
 # C compiler
 a.out
 *.out
+log/wollok.log
