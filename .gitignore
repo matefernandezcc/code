@@ -4,6 +4,7 @@
 # C compiler
 a.out
 *.out
+*.exe
 
 # Wollok logs and more
 *.index
@@ -14,9 +15,12 @@ a.out
 *.txt
 *.fileTable.*
 *.prefs
+*.wsdi
 Pdep/Wollok/configuration
 Pdep/Wollok/workspace/.metadata
 Pdep/Wollok/features
-/Pdep/Wollok/p2
-/Pdep/Wollok/plugins
-/Pdep/Wollok/readme
+Pdep/Wollok/p2
+Pdep/Wollok/plugins
+Pdep/Wollok/readme
+Pdep/Wollok/.eclipseproduct
+Pdep/Wollok/artifacs.xml
