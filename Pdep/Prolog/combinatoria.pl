@@ -38,7 +38,7 @@ combinatoria([_|Resto], Dinero, Lista):-
     combinatoria(Resto, Dinero, Lista).
 
 
-
+ 
 /* ///////////////////// Template ///////////////////// 
 
 % Caso general: lista vacía.
