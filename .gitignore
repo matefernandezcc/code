@@ -3,6 +3,14 @@ a.out
 *.out
 
 # Wollok logs and more
+*.index
+*.xml
+*.jar
+*.target
+*.ini
+*.txt
+*.fileTable.*
+*.prefs
 Pdep/Wollok/configuration
 Pdep/Wollok/workspace/.metadata
 Pdep/Wollok/features
