@@ -17,7 +17,7 @@
 [Cronograma](https://docs.google.com/spreadsheets/d/111J8JaYS1tVGJGhRd0_RS6tKi0DfL6HlqCTTOrGnfW0/edit#gid=0)
 
 ## Sistemas Operativos (SO) - K3054
-- Clases grabadas
+- Clases grabadas 
   - [K3054 - 1C2020](https://www.youtube.com/playlist?list=PL6oA23OrxDZDQEFo7aKBceotX48vLmQYA)
   - [K3574 - 2C2020](https://www.youtube.com/playlist?list=PL6oA23OrxDZDhjxNEgWnC02g_CL7NlwlD) <=
   - [K3054 - 1C2021](https://www.youtube.com/playlist?list=PL6oA23OrxDZDs0NotvQKRzGLX-iG3wJa1)
