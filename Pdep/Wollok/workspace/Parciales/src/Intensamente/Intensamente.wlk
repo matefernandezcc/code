@@ -17,7 +17,7 @@ class Persona {
 	
 	method convetirEnPensamientoCentral(recuerdo) {
 		pensamientoCentral = recuerdo.descripcion()
-	}
+	} 
 	
 	method disminuirFelicidad() {
 		felicidad -= felicidad*0.1
