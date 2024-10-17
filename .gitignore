@@ -3,7 +3,9 @@ a.out
 *.out
 
 # Wollok logs and more
-log/wollok.log
 Pdep/Wollok/configuration
-Pdep/Wollok/workspace
+Pdep/Wollok/workspace/.metadata
 Pdep/Wollok/features
+/Pdep/Wollok/p2
+/Pdep/Wollok/plugins
+/Pdep/Wollok/readme
