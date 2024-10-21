@@ -18,7 +18,6 @@ class Empleados{
 	
 	method sabeProgramarLenguajeAntiguo() = lenguajesSabidos.any
 		{ lenguaje => lenguaje.esAntiguo() }
-		
 	
 	method estaInvitado() = self.esCopado() or self.rolEstaInvitado()
 	
