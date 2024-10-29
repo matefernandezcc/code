@@ -1,0 +1,56 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. ManualSortNumbers.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       01 WS-NUMBERS.
+           05 WS-NUMBER-ENTRY OCCURS 100 TIMES PIC 9(3).
+
+       01 WS-COUNTER        PIC 9(3) VALUE 1.
+       01 WS-COUNTER-INNER  PIC 9(3) VALUE 1.
+       01 WS-TEMP           PIC 9(3).
+       01 WS-CALCULATION    PIC 9(3).
+
+       PROCEDURE DIVISION.
+
+       MAIN-PROCEDURE.
+           PERFORM INITIALIZE-TABLE
+           PERFORM DISPLAY-FIRST-5-BEFORE
+           PERFORM SORT-TABLE
+           PERFORM DISPLAY-FIRST-5-AFTER
+           STOP RUN.
+
+       INITIALIZE-TABLE.
+           PERFORM VARYING WS-COUNTER FROM 1 BY 1 UNTIL WS-COUNTER > 100
+               COMPUTE WS-CALCULATION = 101 - WS-COUNTER
+               MOVE WS-CALCULATION TO WS-NUMBER-ENTRY(WS-COUNTER)
+           END-PERFORM.
+
+       DISPLAY-FIRST-5-BEFORE.
+           DISPLAY "First 5 elements before sorting:"
+           PERFORM VARYING WS-COUNTER FROM 1 BY 1 UNTIL WS-COUNTER > 5
+               DISPLAY WS-NUMBER-ENTRY(WS-COUNTER)
+           END-PERFORM.
+
+       SORT-TABLE.
+           PERFORM VARYING WS-COUNTER FROM 1 BY 1 UNTIL WS-COUNTER = 99
+               PERFORM VARYING WS-COUNTER-INNER FROM 1 BY 1
+                   UNTIL WS-COUNTER-INNER > 100 - WS-COUNTER
+                   IF WS-NUMBER-ENTRY(WS-COUNTER-INNER) >
+                      WS-NUMBER-ENTRY(WS-COUNTER-INNER + 1)
+                       MOVE WS-NUMBER-ENTRY(WS-COUNTER-INNER)
+                           TO WS-TEMP
+                       MOVE WS-NUMBER-ENTRY(WS-COUNTER-INNER + 1)
+                           TO WS-NUMBER-ENTRY(WS-COUNTER-INNER)
+                       MOVE WS-TEMP
+                           TO WS-NUMBER-ENTRY(WS-COUNTER-INNER + 1)
+                   END-IF
+               END-PERFORM
+           END-PERFORM.
+
+       DISPLAY-FIRST-5-AFTER.
+           DISPLAY "First 5 elements after sorting:"
+           PERFORM VARYING WS-COUNTER FROM 1 BY 1 UNTIL WS-COUNTER > 5
+               DISPLAY WS-NUMBER-ENTRY(WS-COUNTER)
+           END-PERFORM.
