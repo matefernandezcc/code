@@ -6,6 +6,7 @@ Hoja de comandos => <leader> + ch
 Tree de directorios => Ctrl + n = <C-n>
 Terminal horizontal (h) o vertical (v) => <C-h> o <C-v>
 Switch Buffer (panel) => <C-Direccion> siendo Direccion "h,j,k,l"
+Salir del modo Terminal => <C-x>
 
 ## Manejo de archivos
 Cambiar archivo abierto => Tab
