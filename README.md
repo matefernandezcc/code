@@ -1,10 +1,20 @@
+<span style="display: inline-block; text-align: center; width: 100%;">
+  <img src="./UTN.png" width="auto" height="200px" style="display: block; margin-left: auto; margin-right: auto;"></span>
+
 # Código y ejercicios en general - UTN FRBA
 
+## Diseño de Sistemas de Información (DDS)
+- Clases grabadas, Profesor: Ezequiel Escobar
+  - [Grabadas 2024](https://www.youtube.com/playlist?list=PLn67kS__5vyFNGpiACet1RF6SxGQIsb3H)
+
 ## Sintaxis y Semantica de los lenguajes (SSL) - K2055
-- Clases grabadas TODO
+- Clases grabadas, Profesora: Roxana Leituz
+  - [K2055 - 2024](https://www.youtube.com/playlist?list=PLpDiyBwoy8O0lqbPakFPqFIh52wm48HrP)
+  - [Repaso 1er Parcial](https://www.youtube.com/watch?v=Rn_bzqiQAW0&list=PLpDiyBwoy8O0lqbPakFPqFIh52wm48HrP&index=21) 
+  - [Repaso 2do Parcial](https://www.youtube.com/watch?v=V58jm-pvB2g&list=PLpDiyBwoy8O0lqbPakFPqFIh52wm48HrP&index=28) 
   
-## Paradigmas de programación (Pdep)
-- Clases grabadas
+## Paradigmas de programación (Pdep) - Curso de Verano 2023
+- Clases grabadas, Profesor: Martin Gotelli
   - Haskell (Funcional)
     - C1: [Parcial Gravity Falls](https://youtu.be/jb-PjbbkkkU)
   - Prolog (Lógico)
@@ -17,7 +27,7 @@
 [Cronograma](https://docs.google.com/spreadsheets/d/111J8JaYS1tVGJGhRd0_RS6tKi0DfL6HlqCTTOrGnfW0/edit#gid=0)
 
 ## Sistemas Operativos (SO) - K3054
-- Clases grabadas
+- Clases grabadas, Profesor: Luis Cannavo
   - [K3054 - 1C2020](https://www.youtube.com/playlist?list=PL6oA23OrxDZDQEFo7aKBceotX48vLmQYA)
   - [K3574 - 2C2020](https://www.youtube.com/playlist?list=PL6oA23OrxDZDhjxNEgWnC02g_CL7NlwlD) <=
   - [K3054 - 1C2021](https://www.youtube.com/playlist?list=PL6oA23OrxDZDs0NotvQKRzGLX-iG3wJa1)
