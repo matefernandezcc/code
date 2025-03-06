@@ -38,7 +38,7 @@ public class ExportadorTest {
         this.documento.agregarDato("2", "Mateo", "Fernandez", "21");
         this.documento.agregarDato("3", "Lionel", "Messi", "10");
 
-        //TODO Pendiente a mejorar el ocultamiento del ExportarAPDF y AdapterApachePDFBox
+        // Pendiente a mejorar el ocultamiento del ExportarAPDF y AdapterApachePDFBox
         this.exportador.setEstrategia(new ExportarAPDF(new AdapterApachePDFBox("datos.pdf")));
         this.exportador.setExportable(this.documento);
         Assertions.assertEquals(Config.RUTA_EXPORTACION + "datos.pdf", this.exportador.exportar());

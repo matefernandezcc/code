@@ -28,7 +28,7 @@ public class CancionTest {
     public void cancionEsRecienLanzadaTest(){
         String detalleCompleto = this.cancion.serReproducida();
 
-        String detalleEsperado = ""; //TODO deberia armar el detalle que espero que me devuelva si está en normal
+        String detalleEsperado = ""; // deberia armar el detalle que espero que me devuelva si está en normal
 
         Assertions.assertEquals(detalleEsperado, detalleCompleto);
     }

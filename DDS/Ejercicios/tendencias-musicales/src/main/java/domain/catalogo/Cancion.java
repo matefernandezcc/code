@@ -1,6 +1,5 @@
 package domain.catalogo;
 
-import domain.tendencias.EnAuge;
 import domain.tendencias.Normal;
 import domain.tendencias.Popularidad;
 

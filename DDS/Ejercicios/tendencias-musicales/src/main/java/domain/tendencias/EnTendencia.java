@@ -17,6 +17,5 @@ public class EnTendencia extends Popularidad {
 
     @Override
     public void reproducir(Cancion cancion) {
-        //TODO
     }
 }
