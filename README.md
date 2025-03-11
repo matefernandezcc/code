@@ -6,7 +6,7 @@
 
 ## Diseño de Sistemas de Información (DDS)
 - Clases grabadas, Profesor: Ezequiel Escobar
-  - [Grabadas 2024](https://www.youtube.com/playlist?list=PLn67kS__5vyFNGpiACet1RF6SxGQIsb3H)
+  - [Grabadas 2024](https://www.youtube.com/playlist?list=PLn67kS__5vyFNGpiACet1RF6SxGQIsb3H) <=
 
 ## Sintaxis y Semantica de los lenguajes (SSL) - K2055
 - Clases grabadas, Profesora: Roxana Leituz
