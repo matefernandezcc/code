@@ -1,5 +1,6 @@
-<span style="display: inline-block; text-align: center; width: 100%;">
-  <img src="./UTN.png" width="auto" height="200px" style="display: block; margin-left: auto; margin-right: auto;"></span>
+<p align="center">
+  <img width="500" height="auto" src="./UTN.png">
+</p>
 
 # Código y ejercicios en general - UTN FRBA
 
